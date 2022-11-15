@@ -1,0 +1,35 @@
+.menu-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  font-size: 12px;
+  color: #0D1639;
+  cursor: pointer;
+  user-select: none;
+
+  &-checked {
+    color: #0D1639;
+  }
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+  }
+
+  .disabled {
+    cursor: default;
+    color: rgba(65,75,85,0.4);
+  }
+
+  .active {
+    &:hover {
+      color: #1D80FF;
+      background-color: rgba(29, 128, 255, 0.15);
+    }
+  }
+}

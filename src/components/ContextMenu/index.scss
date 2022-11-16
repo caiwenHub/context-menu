@@ -1,22 +1,18 @@
-.file-menu {
+.context-menu {
   position: fixed;
   z-index: 1000;
 }
 
-.file-menu__mask {
+.context-menu__mask {
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 }
 
-.menu-box {
+.context-menu__content {
   background: #fff;
   box-shadow: 0 0 10px 1px rgba(13, 22, 57, 0.1);
   border-radius: 4px;
   border: 1px solid #eef0f8;
-}
-
-.file-btnword {
-  user-select: none;
 }

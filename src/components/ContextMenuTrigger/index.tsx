@@ -1,6 +1,7 @@
 import React, { useRef, useCallback, isValidElement } from "react";
-import "./index.scss";
+// import "./index.scss";
 import { ContextMenuType } from "@/types";
+import ContextMenuModal from "../ContextMenu";
 
 interface ContextMenuTriggerType {
   target?: string; // 当前触发右键菜单的目标分类
@@ -27,26 +28,35 @@ const ContextMenuTrigger: React.FC<ContextMenuTriggerType> = ({
       effectFn && effectFn(data);
       e.preventDefault();
       e.stopPropagation();
-      // 先清除一下之前的dom，避免菜单闪
-      updateMenuFn &&
-        updateMenuFn({
-          target,
-          data: [],
-          position: { clientX: OUTSCREEN, clientY: OUTSCREEN },
-        });
-      if (!timer.current) {
-        timer.current = setTimeout(() => {
-          updateMenuFn &&
-            updateMenuFn({
-              ...(data || {}),
-              position: { clientX: e.clientX, clientY: e.clientY },
-            });
-          clearTimeout(timer.current);
-          timer.current = null;
-        });
-      }
+      // // 先清除一下之前的dom，避免菜单闪
+      // updateMenuFn &&
+      //   updateMenuFn({
+      //     target,
+      //     data: [],
+      //     position: { clientX: OUTSCREEN, clientY: OUTSCREEN },
+      //   });
+      // if (!timer.current) {
+      //   timer.current = setTimeout(() => {
+      //     updateMenuFn &&
+      //       updateMenuFn({
+      //         ...(data || {}),
+      //         position: { clientX: e.clientX, clientY: e.clientY },
+      //       });
+      //     clearTimeout(timer.current);
+      //     timer.current = null;
+      //   });
+      // }
+      // ContextMenuModal({
+      //   position: { clientX: e.clientX, clientY: e.clientY },
+      // });
+      const a = ContextMenuModal.getInstance({
+        position: { clientX: e.clientX, clientY: e.clientY },
+      });
+      a.render({
+        position: { clientX: e.clientX, clientY: e.clientY },
+      });
     },
-    [data, effectFn, target, updateMenuFn]
+    [data, effectFn]
   );
 
   return isValidElement(children)

@@ -1079,18 +1079,17 @@
   resolved "http://47.104.20.67/@bcoe%2fv8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha1-daLotRy3WKdVPWgEpZMteqznXDk=
 
-"@craco/craco@^7.0.0":
-  version "7.0.0"
-  resolved "http://47.104.20.67/@craco%2fcraco/-/craco-7.0.0.tgz#4e9243e53fba6ed4d2bc08aa65aae9d1b63541ed"
-  integrity sha512-OyjL9zpURB6Ha1HO62Hlt27Xd7UYJ8DRiBNuE4DBB8Ue0iQ9q/xsv3ze7ROm6gCZqV6I2Gxjnq0EHCCye+4xDQ==
+"@craco/craco@6.4.3":
+  version "6.4.3"
+  resolved "http://47.104.20.67/@craco%2fcraco/-/craco-6.4.3.tgz#784395b6ebab764056550a2860494d24c3abd44e"
+  integrity sha512-RzkXYmNzRCGUyG7mM+IUMM+nvrpSfA34352sPSGQN76UivAmCAht3sI4v5JKgzO05oUK9Zwi6abCKD7iKXI8hQ==
   dependencies:
-    autoprefixer "^10.4.12"
     cosmiconfig "^7.0.1"
     cosmiconfig-typescript-loader "^1.0.0"
-    cross-spawn "^7.0.3"
-    lodash "^4.17.21"
-    semver "^7.3.7"
-    webpack-merge "^5.8.0"
+    cross-spawn "^7.0.0"
+    lodash "^4.17.15"
+    semver "^7.3.2"
+    webpack-merge "^4.2.2"
 
 "@cspotcode/source-map-support@^0.8.0":
   version "0.8.1"
@@ -2699,7 +2698,7 @@ at-least-node@^1.0.0:
   resolved "http://47.104.20.67/at-least-node/-/at-least-node-1.0.0.tgz#602cd4b46e844ad4effc92a8011a3c46e0238dc2"
   integrity sha1-YCzUtG6EStTv/JKoARo8RuAjjcI=
 
-autoprefixer@^10.4.12, autoprefixer@^10.4.13:
+autoprefixer@^10.4.13:
   version "10.4.13"
   resolved "http://47.104.20.67/autoprefixer/-/autoprefixer-10.4.13.tgz#b5136b59930209a321e9fa3dca2e7c4d223e83a8"
   integrity sha512-49vKpMqcZYsJjwotvt4+h/BCjJVnhGwcLpDt5xkcaOG3eLrG/HUYLagrihYsQ+qrIBgIzX1Rw7a6L8I/ZA1Atg==
@@ -3090,7 +3089,7 @@ check-types@^11.1.1:
   resolved "http://47.104.20.67/check-types/-/check-types-11.1.2.tgz#86a7c12bf5539f6324eb0e70ca8896c0e38f3e2f"
   integrity sha1-hqfBK/VTn2Mk6w5wyoiWwOOPPi8=
 
-chokidar@^3.4.2, chokidar@^3.5.3:
+"chokidar@>=3.0.0 <4.0.0", chokidar@^3.4.2, chokidar@^3.5.3:
   version "3.5.3"
   resolved "http://47.104.20.67/chokidar/-/chokidar-3.5.3.tgz#1cf37c8707b932bd1af1ae22c0432e2acd1903bd"
   integrity sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==
@@ -3135,15 +3134,6 @@ cliui@^7.0.2:
     string-width "^4.2.0"
     strip-ansi "^6.0.0"
     wrap-ansi "^7.0.0"
-
-clone-deep@^4.0.1:
-  version "4.0.1"
-  resolved "http://47.104.20.67/clone-deep/-/clone-deep-4.0.1.tgz#c19fd9bdbbf85942b4fd979c84dcf7d5f07c2387"
-  integrity sha1-wZ/Zvbv4WUK0/ZechNz31fB8I4c=
-  dependencies:
-    is-plain-object "^2.0.4"
-    kind-of "^6.0.2"
-    shallow-clone "^3.0.0"
 
 clsx@^1.2.1:
   version "1.2.1"
@@ -3359,7 +3349,7 @@ create-require@^1.1.0:
   resolved "http://47.104.20.67/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
   integrity sha1-wdfo8eX2z8n/ZfnNNS03NIdWwzM=
 
-cross-spawn@^7.0.2, cross-spawn@^7.0.3:
+cross-spawn@^7.0.0, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
   version "7.0.3"
   resolved "http://47.104.20.67/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
   integrity sha1-9zqFudXUHQRVUcF34ogtSshXKKY=
@@ -5019,6 +5009,11 @@ immer@^9.0.7:
   resolved "http://47.104.20.67/immer/-/immer-9.0.16.tgz#8e7caab80118c2b54b37ad43e05758cdefad0198"
   integrity sha512-qenGE7CstVm1NrHQbMh8YaSzTZTFNP3zPqr3YU0S0UY441j4bJTg4A2Hh5KAhwgaiU6ZZ1Ar6y/2f4TblnMReQ==
 
+immutable@^4.0.0:
+  version "4.1.0"
+  resolved "http://47.104.20.67/immutable/-/immutable-4.1.0.tgz#f795787f0db780183307b9eb2091fcac1f6fafef"
+  integrity sha512-oNkuqVTA8jqG1Q6c+UglTOD1xhC1BtjKI7XkCXRkZHrN5m18/XsnUp8Q89GkQO/z+0WjonSvl0FLhDYftp46nQ==
+
 import-fresh@^3.0.0, import-fresh@^3.1.0, import-fresh@^3.2.1:
   version "3.3.0"
   resolved "http://47.104.20.67/import-fresh/-/import-fresh-3.3.0.tgz#37162c25fcb9ebaa2e6e53d5b4d88ce17d9e0c2b"
@@ -5210,13 +5205,6 @@ is-plain-obj@^3.0.0:
   resolved "http://47.104.20.67/is-plain-obj/-/is-plain-obj-3.0.0.tgz#af6f2ea14ac5a646183a5bbdb5baabbc156ad9d7"
   integrity sha1-r28uoUrFpkYYOlu9tbqrvBVq2dc=
 
-is-plain-object@^2.0.4:
-  version "2.0.4"
-  resolved "http://47.104.20.67/is-plain-object/-/is-plain-object-2.0.4.tgz#2c163b3fafb1b606d9d17928f05c2a1c38e07677"
-  integrity sha1-LBY7P6+xtgbZ0Xko8FwqHDjgdnc=
-  dependencies:
-    isobject "^3.0.1"
-
 is-potential-custom-element-name@^1.0.1:
   version "1.0.1"
   resolved "http://47.104.20.67/is-potential-custom-element-name/-/is-potential-custom-element-name-1.0.1.tgz#171ed6f19e3ac554394edf78caa05784a45bebb5"
@@ -5328,11 +5316,6 @@ isexe@^2.0.0:
   version "2.0.0"
   resolved "http://47.104.20.67/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
-
-isobject@^3.0.1:
-  version "3.0.1"
-  resolved "http://47.104.20.67/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
-  integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
 istanbul-lib-coverage@^3.0.0, istanbul-lib-coverage@^3.2.0:
   version "3.2.0"
@@ -7893,6 +7876,15 @@ sass-loader@^12.3.0:
     klona "^2.0.4"
     neo-async "^2.6.2"
 
+sass@^1.56.1:
+  version "1.56.1"
+  resolved "http://47.104.20.67/sass/-/sass-1.56.1.tgz#94d3910cd468fd075fa87f5bb17437a0b617d8a7"
+  integrity sha512-VpEyKpyBPCxE7qGDtOcdJ6fFbcpOM+Emu7uZLxVrkX8KVU/Dp5UF7WLvzqRuUhB6mqqQt1xffLoG+AndxTZrCQ==
+  dependencies:
+    chokidar ">=3.0.0 <4.0.0"
+    immutable "^4.0.0"
+    source-map-js ">=0.6.2 <2.0.0"
+
 sax@~1.2.4:
   version "1.2.4"
   resolved "http://47.104.20.67/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
@@ -8039,13 +8031,6 @@ setprototypeof@1.2.0:
   resolved "http://47.104.20.67/setprototypeof/-/setprototypeof-1.2.0.tgz#66c9a24a73f9fc28cbe66b09fed3d33dcaf1b424"
   integrity sha1-ZsmiSnP5/CjL5msJ/tPTPcrxtCQ=
 
-shallow-clone@^3.0.0:
-  version "3.0.1"
-  resolved "http://47.104.20.67/shallow-clone/-/shallow-clone-3.0.1.tgz#8f2981ad92531f55035b01fb230769a40e02efa3"
-  integrity sha1-jymBrZJTH1UDWwH7IwdppA4C76M=
-  dependencies:
-    kind-of "^6.0.2"
-
 shebang-command@^2.0.0:
   version "2.0.0"
   resolved "http://47.104.20.67/shebang-command/-/shebang-command-2.0.0.tgz#ccd0af4f8835fbdc265b82461aaf0c36663f34ea"
@@ -8106,7 +8091,7 @@ source-list-map@^2.0.0, source-list-map@^2.0.1:
   resolved "http://47.104.20.67/source-list-map/-/source-list-map-2.0.1.tgz#3993bd873bfc48479cca9ea3a547835c7c154b34"
   integrity sha1-OZO9hzv8SEecyp6jpUeDXHwVSzQ=
 
-source-map-js@^1.0.1, source-map-js@^1.0.2:
+"source-map-js@>=0.6.2 <2.0.0", source-map-js@^1.0.1, source-map-js@^1.0.2:
   version "1.0.2"
   resolved "http://47.104.20.67/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
@@ -8930,13 +8915,12 @@ webpack-manifest-plugin@^4.0.2:
     tapable "^2.0.0"
     webpack-sources "^2.2.0"
 
-webpack-merge@^5.8.0:
-  version "5.8.0"
-  resolved "http://47.104.20.67/webpack-merge/-/webpack-merge-5.8.0.tgz#2b39dbf22af87776ad744c390223731d30a68f61"
-  integrity sha1-Kznb8ir4d3atdEw5AiNzHTCmj2E=
+webpack-merge@^4.2.2:
+  version "4.2.2"
+  resolved "http://47.104.20.67/webpack-merge/-/webpack-merge-4.2.2.tgz#a27c52ea783d1398afd2087f547d7b9d2f43634d"
+  integrity sha1-onxS6ng9E5iv0gh/VH17nS9DY00=
   dependencies:
-    clone-deep "^4.0.1"
-    wildcard "^2.0.0"
+    lodash "^4.17.15"
 
 webpack-sources@^1.4.3:
   version "1.4.3"
@@ -9084,11 +9068,6 @@ which@^2.0.1:
   integrity sha1-fGqN0KY2oDJ+ELWckobu6T8/UbE=
   dependencies:
     isexe "^2.0.0"
-
-wildcard@^2.0.0:
-  version "2.0.0"
-  resolved "http://47.104.20.67/wildcard/-/wildcard-2.0.0.tgz#a77d20e5200c6faaac979e4b3aadc7b3dd7f8fec"
-  integrity sha1-p30g5SAMb6qsl55LOq3Hs91/j+w=
 
 word-wrap@^1.2.3, word-wrap@~1.2.3:
   version "1.2.3"
